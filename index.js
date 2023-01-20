@@ -14,10 +14,9 @@ const cors = require("cors");
 
 // Main App
 const app = express();
-const PORT = process.env.PORT || 5050;
 
 app.use(cors({origin: true})); //helps us use cross origin databases
-app.listen(PORT,()=>console.log(`Server is running in port ${PORT}`))
+
 // DB Ref
 const db = admin.firestore();
 
